@@ -12,7 +12,8 @@ O OdontoGest permite que dentistas e recepcionistas gerenciem o dia a dia do con
 
 ## ✨ Funcionalidades
 
-- [ ] Cadastro e busca de pacientes
+- [x] Cadastro e busca de pacientes (US01)
+- [x] Registro de anamnese e histórico clínico do paciente (US02)
 - [ ] Agendamento, remarcação e cancelamento de consultas
 - [ ] Prontuário e histórico de procedimentos
 - [ ] Cadastro de procedimentos e valores

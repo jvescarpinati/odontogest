@@ -34,6 +34,7 @@ public class Anamnese {
     }
 
     public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
     public Paciente getPaciente() { return paciente; }
     public String getAlergias() { return alergias; }
     public void setAlergias(String alergias) { this.alergias = alergias; }

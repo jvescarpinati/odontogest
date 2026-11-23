@@ -49,6 +49,12 @@ public class GlobalExceptionHandler {
         return erro(HttpStatus.CONFLICT, "Registro viola uma restrição do banco (CPF duplicado?)", null);
     }
 
+    /** Validações de regra de negócio (ex.: data de fim antes do início no agendamento). */
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ErroResponse> argumentoInvalido(IllegalArgumentException ex) {
+        return erro(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
+    }
+
     private ResponseEntity<ErroResponse> erro(HttpStatus status, String msg, Map<String, String> campos) {
         return ResponseEntity.status(status)
                 .body(new ErroResponse(status.value(), msg, campos, LocalDateTime.now()));

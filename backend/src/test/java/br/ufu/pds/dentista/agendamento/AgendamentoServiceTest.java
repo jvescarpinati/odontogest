@@ -252,6 +252,6 @@ class AgendamentoServiceTest {
     // ── Helper ───────────────────────────────────────────────────────────────
 
     private static AgendamentoRequest req(Long pacienteId, LocalDateTime inicio, LocalDateTime fim) {
-        return new AgendamentoRequest(pacienteId, inicio, fim, null);
+        return new AgendamentoRequest(pacienteId, inicio, fim, null,null);
     }
 }

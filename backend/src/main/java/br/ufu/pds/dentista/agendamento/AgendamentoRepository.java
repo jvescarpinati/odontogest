@@ -50,4 +50,8 @@ public interface AgendamentoRepository extends JpaRepository<Agendamento, Long> 
             @Param("novoFim")         LocalDateTime novoFim,
             @Param("excludeId")       Long excludeId,
             @Param("statusCancelado") StatusAgendamento statusCancelado);
+
+    /** Verifica se existe algum agendamento vinculado a uma etapa de tratamento. */
+    boolean existsByEtapaId(Long etapaId);
+
 }

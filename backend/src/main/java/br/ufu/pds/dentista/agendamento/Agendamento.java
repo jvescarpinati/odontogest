@@ -101,6 +101,9 @@ public class Agendamento {
     public Long getId()                      { return id; }
     public Paciente getPaciente()            { return paciente; }
     public Long getEtapaId()                 { return etapaId; }
+    public void setEtapaId(Long etapaId) {
+    this.etapaId = etapaId;
+    }
     public LocalDateTime getDataHoraInicio() { return dataHoraInicio; }
     public LocalDateTime getDataHoraFim()    { return dataHoraFim; }
     public StatusAgendamento getStatus()     { return status; }
